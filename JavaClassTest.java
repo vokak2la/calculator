@@ -19,11 +19,12 @@ public class JavaClassTest {
 
         }
         System.out.println("operation " + operation);
-        res0 = strokaCalc.UbratProbeliPervogoSlova(res);
-        res1 = strokaCalc.UbratProbeliVtorogoSlova(res);
-        System.out.println("1 number = " + res0 + " + " + "2 number = " + res1);
-        num1 = strokaCalc.numbers1(res0);
-        num2 = strokaCalc.numbers2(res1);
+        res0 = StrokaCalc.UbratProbeliPervogoSlova(res);
+        res1 = StrokaCalc.UbratProbeliVtorogoSlova(res);
+        System.out.println("1 number = " + res0 + ";   " + "2 number = " + res1);
+
+        num1 = StrokaCalc.numbers1(res0);
+        num2 = StrokaCalc.numbers2(res1);
 
         MathCalc mathCalc = new MathCalc();
         Integer resOperation = mathCalc.doCalc(res0, res1, operation, num1, num2);

@@ -66,7 +66,7 @@ public class ConvertRimToArab {
                 RimToArab2 = 3;
                 break;
             case "II" :
-                RimToArab2 = 8;
+                RimToArab2 = 2;
                 break;
             case "I" :
                 RimToArab2 = 1;

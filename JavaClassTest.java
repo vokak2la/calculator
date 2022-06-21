@@ -30,7 +30,7 @@ public class JavaClassTest {
         System.out.println("num2 = " + num2);
 
         MathCalc mathCalc = new MathCalc();
-        Integer resOperation = mathCalc.doCalc(res0, res1, operation, num1, num2);
+        String resOperation = mathCalc.doCalc(res0, res1, operation, num1, num2);
         System.out.println("Result = " + resOperation);
 
 

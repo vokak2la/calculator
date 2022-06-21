@@ -28,7 +28,7 @@
                 number1 = Integer.parseInt(res0);
 
             }
-            if (res0.matches("[xivXVI]+")) {
+           if (res0.matches("[xivXVI]+")) {
 
                 number1 = ConvertRimToArab.convertRimToArab1(res0.toUpperCase());
             }

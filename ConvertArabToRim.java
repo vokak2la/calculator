@@ -4,8 +4,26 @@ public class ConvertArabToRim {
 
 
 
-    public static String convertArabtoRim (Integer Rimitog) {
-        switch (Rimitog) {
+    public static String convertArabtoRim (String Rimitog) {
+        switch (Integer.parseInt(Rimitog)) {
+            case 16:
+                ArabToRim = "XVI";
+                break;
+            case 15:
+                ArabToRim = "XV";
+                break;
+            case 14:
+                ArabToRim = "XIV";
+                break;
+            case 13:
+                ArabToRim = "XIII";
+                break;
+            case 12:
+                ArabToRim = "XII";
+                break;
+            case 11:
+                ArabToRim = "XI";
+                break;
             case 10:
                 ArabToRim = "X";
                 break;

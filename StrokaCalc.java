@@ -1,50 +1,33 @@
-
     public class StrokaCalc {
+
         public static String[] w;
 
-
-        public String[] Razdelenie(String input) {
-            w = JavaClassTest.input.split("[*+\\-/]");
+        public String[] Separation(String input) {
+            w = input.split("[*+\\-/]");
             return w;
         }
-
-        public static String UbratProbeliPervogoSlova(String res[]) {
-            res[0] = w[0].replaceAll("\\s+", "");
-            return res[0];
+        public static String DeleteSpaces(String [] res, Integer index) {
+            res [index] = w[index].replaceAll("\\s+", "");
+            return res [index];
         }
+        public static Integer number;
 
-        public static String UbratProbeliVtorogoSlova(String[] res) {
-            res[1] = w[1].replaceAll("\\s+", "");
-            return res[1];
+        public static Integer Validation(String [] res, Integer indexx) throws Exception {
+            if (res[indexx].matches("\\d+")) {
+                number = Integer.parseInt(res[indexx]);
+                if (res[indexx].matches("\\d+") && ((Integer.parseInt(res[indexx])<0) || (Integer.parseInt(res[indexx])>10))){
+                    throw new Exception("wrong number");
+                }
+            }
+
+                if (res[indexx].matches("[xivXVI]+")) {
+                    number = ConvertRimToArab.convertRimToArab(res, indexx);
+                }
+
+                return number;
+            }
+
         }
-
-        public static Integer number1;
-        public static Integer number2;
-        //    public static String rim1;
-        //    public static String rim2;
-
-        public static Integer valid1(String res0) throws Exception {
-            if (res0.matches("\\d")) {
-                number1 = Integer.parseInt(res0);
-
-            }
-           if (res0.matches("[xivXVI]+")) {
-
-                number1 = ConvertRimToArab.convertRimToArab1(res0.toUpperCase());
-            }
-            return number1;
-        }
-
-        public static Integer valid2(String res1) throws Exception {
-            if (res1.matches("\\d")) {
-                number2 = Integer.parseInt(res1);
-            }
-            if (res1.matches("[xivXVI]+")) {
-                number2 = ConvertRimToArab.convertRimToArab2(res1.toUpperCase());
-            }
-            return number2;
-        }
-    }
 
 
 

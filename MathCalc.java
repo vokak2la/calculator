@@ -24,7 +24,7 @@ public class MathCalc {
             itog = Integer.toString(num1 / num2);
         }
 
-        if (res[0].matches("[xivXVI]+") && res[1].matches("[xivXVI]+") && operation.contains("-") && num2 > num1) {
+        if (res[0].matches("[xivXVI]+") && res[1].matches("[xivXVI]+") && operation.contains("-") && num2 >= num1) {
 throw  new Exception("wrong math with Rim numbers");
         }
 
